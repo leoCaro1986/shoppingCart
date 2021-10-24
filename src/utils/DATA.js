@@ -13,20 +13,21 @@ let phones = {
     },
     Hauwei:{
         brand: "Hauwei",
-        inCart: "true"
+        inCart: "false"
     },
     HTC:{
         brand: "HTC",
-        inCart: "true"
+        inCart: "false"
     }
-}
-
-export function _getPhones (){
+  }
+  
+  export function _getPhones (){
     return new Promise((res, rej) =>{
         setTimeout(() => res({...phones}), 1000);
     });
-}
-export function setInCart({id, inCart}){
+  }
+  
+  export function setInCart({id, inCart}){
     return new Promise((res, rej) =>{
         setTimeout(() =>{
             phones = {
@@ -39,4 +40,4 @@ export function setInCart({id, inCart}){
             res()
         }, 500);
     });
-}
+  }

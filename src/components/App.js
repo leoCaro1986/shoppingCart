@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import 'semantic-ui-css/semantic.min.css'
 
 import '../index.css'
-import { _getPhones } from '../utils/_DATA'
+import { _getPhones } from '../utils/DATA'
 import { receivePhones } from '../actions/phones'
 import Container from './container'
 
